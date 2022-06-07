@@ -14,7 +14,7 @@ public  class MineSweeper {
         int minesNumber=(int)((row*column)/4);
         int fieldSize=row*column;
         int right=fieldSize-minesNumber;
-        int sum = 0;
+
         boolean isWin=true;
 
         createField(row, column);
@@ -27,7 +27,7 @@ public  class MineSweeper {
                 }
                 System.out.print("\n");
             }
-
+            int sum = 0;
             System.out.print("Enter the row you want to select : ");
             int selectedRow = (input.nextInt()) - 1;
             if(selectedRow>=row){
